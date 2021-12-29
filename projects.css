@@ -1,0 +1,821 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/** Fonts **/
+h1 {
+  color: #2F398C;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #2F398C;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #6E75B0;
+  opacity: 75%;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h4 {
+  color: #6E75B0;
+  opacity: 75%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h5 {}
+
+h6 {
+  font-size: 16px;
+  color: #A7AAA9;
+}
+
+p {
+  font-size: 16px;
+}
+
+.quote {
+  color: grey;
+  font-size: 22px;
+}
+
+.project-logo {
+  height: 7vh;
+  width: auto;
+  margin-bottom: 2%;
+}
+
+/** Start Nav Menu**/
+.nav-menu {
+  overflow: hidden;
+  background-color: rgb(245, 245, 247);
+}
+
+.nav-menu a {
+  float: left;
+  display: block;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+  margin-left: 2.7vw;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.nav-menu-right {
+  float: right;
+}
+
+.nav-menu-right a {
+  color: #3643b5;
+  text-align: center;
+  margin-right: 3vw;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  opacity: 60%;
+}
+
+.nav-menu a:hover {
+  opacity: 100%;
+}
+
+.nav-menu .icon {
+  display: none;
+}
+
+#dropdown {
+  position: absolute;
+  top: 33px;
+  background-color: #f1f1f1;
+  transform: translateX(5vw);
+  visibility: hidden;
+  z-index: 200000000000;
+}
+
+.dropdown-content {
+  list-style-type: none;
+  heigth: inherit
+}
+
+.dropdown-item {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  .nav-menu a {
+    display: none;
+    margin-left: 6vw;
+  }
+
+  .nav-menu-right {
+    float: left;
+  }
+
+  .nav-menu-right a {
+    margin-bottom: 4vh;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .nav-menu-right a:hover {
+    opacity: 50%;
+  }
+
+  .nav-menu a.icon {
+    float: right;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 1vh;
+    margin-right: 3vw;
+    color: #3643b5;
+  }
+
+  .nav-menu.responsive {
+    background-color: rgb(245, 245, 247);
+    width: 100%;
+    height: auto;
+    z-index: 10000;
+  }
+
+  .nav-menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #3643b5;
+  }
+
+  .nav-menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: #3643b5;
+  }
+
+  .nav-menu.responsive a:hover {
+    opacity: 75%;
+  }
+}
+
+/** End Nav Menu **/
+
+/** Start Consistent Metrics**/
+.metric-heading {
+  color: #2F398C;
+  font-weight: 600;
+  margin: 0;
+}
+
+.metric-sub {
+  color: grey;
+}
+
+.metric-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.metric-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.metric-col {
+  float: left;
+  width: 15%;
+  margin-right: 5%;
+  border-right: solid 2px #B7BCDA;
+  padding-right: 5%;
+}
+
+.last-metric-col {
+  margin-right: 0;
+  border-right: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .metric-row {
+    margin-top: 5%;
+  }
+
+  .metric-col {
+    float: left;
+    width: 40%;
+    padding-right: 3%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+  }
+
+  .last-metric-col {
+    border-right: solid 2px #B7BCDA;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .metric-row {
+    margin-top: 5%;
+  }
+
+  .metric-col {
+    width: 100%;
+    margin-right: 0;
+    border-right: white;
+    padding-right: 0;
+    margin-bottom: 5%;
+  }
+}
+
+/** End Consistent Metrics**/
+
+/** Start Consistent Sponsors**/
+.sponsor-logo {
+  height: 70px;
+  width: auto;
+}
+
+.sponsor-row {
+  width: 100%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.sponsor-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sponsor-col {
+  float: left;
+  text-align: center;
+  width: auto;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+
+@media screen and (max-width: 767px) {
+  .sponsor-col {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
+/** End Consistent Sponsors**/
+
+/** Start Consistent Gallery**/
+.gallery-img {
+  width: 20vw;
+}
+
+.gallery-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery-col {
+  float: left;
+  text-align: center;
+  width: 23%;
+  margin-right: 1.5%;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-col {
+    width: 100%;
+    float: left;
+    margin-bottom: 5%;
+  }
+
+  .gallery-img {
+    width: 90vw;
+  }
+
+  .gallery-row {
+    margin-top: 10%;
+  }
+}
+/** End Consistent Gallery**/
+
+/** Start Latest Project **/
+.latest-project-box {
+  width: 90vw;
+  background-image: url("images/projects/latest-project-box-background.svg");
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 4% 0 5% 0;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.latest-project-heading {
+  color: white;
+  margin: 0 0 1.5% 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.latest-project-sub {
+  color: white;
+  margin: 0 0 4% 0;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.latest-project-button {
+  border: solid 1.8px white;
+  border-radius: 10px;
+  padding: 1% 2% 1% 2%;
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5%;
+}
+
+.latest-project-button:hover {
+  background-color: white;
+  color: #3643b5;
+}
+
+@media screen and (max-width: 767px) {
+  #latest-project {
+    margin-top: 65px;
+  }
+
+  .latest-project-box {
+    padding: 10%;
+    width: 70vw;
+  }
+
+  .latest-project-button {
+    padding: 3% 5% 3% 5%;
+  }
+
+  .latest-project-sub {
+    margin-bottom: 12%;
+    margin-top: 8%;
+
+  }
+}
+/** End Latest Project **/
+
+/** Start Resilience **/
+#resilience {
+  padding: 0% 5% 0% 5%;
+  margin-top: 8%;
+}
+
+.resilience-health-row {
+  width: 100%;
+}
+
+.resilience-health-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.resilience-body-col {
+  float: left;
+}
+
+.resilience-body-left {
+  width: 60%;
+  margin-right: 5%;
+}
+
+.resilience-body-right {
+  width: 32.5%;
+}
+
+#resilience-gallery-5 {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .resilience-body-right {
+    visibility: hidden;
+    width: 0%;
+  }
+
+  .resilience-body-left {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+#thank-you-book {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+/* Create two equal columns that floats next to each other */
+.book-credits-col {
+  float: left;
+  width: 28%;
+  margin-right: 5%;
+}
+
+/* Clear floats after the columns */
+.book-credits-col:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 767px) {
+  .resilience-body-right {
+    visibility: hidden;
+    width: 0%;
+  }
+
+  .resilience-body-left {
+    width: 100%;
+  }
+}
+/** End Resilience **/
+
+/** Start Global Health Panel **/
+#global-health {
+  padding: 0% 5% 0% 5%;
+  margin-top: 8%;
+}
+
+.global-health-row {
+  width: 100%;
+}
+
+.global-health-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.global-health-body-col {
+  float: left;
+}
+
+.global-health-body-left {
+  width: 53%;
+  margin-right: 5%;
+}
+
+.global-health-body-right {
+  width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  .global-health-body-col {
+    width: 100%;
+  }
+
+  .global-health-body-left {
+    margin-bottom: 5%;
+  }
+}
+/** End Global Health Panel **/
+
+/** Start Careers In Medicine Panel **/
+#careers-in-medicine {
+  padding: 0% 5% 0% 5%;
+  margin-top: 8%;
+}
+
+.careers-in-medicine-row {
+  width: 100%;
+}
+
+.careers-in-medicine-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.careers-in-medicine-body-col {
+  float: left;
+}
+
+.careers-in-medicine-left {
+  width: 55%;
+  margin-right: 5%;
+}
+
+.careers-in-medicine-right {
+  width: 35%;
+}
+
+@media screen and (max-width: 767px) {
+  .careers-in-medicine-body-col {
+    width: 100%;
+  }
+
+  .careers-in-medicine-body-left {
+    margin-bottom: 5%;
+  }
+}
+/** End Careers in Medicine Panel **/
+
+/** Start Artists of Instagram **/
+#artists-ig {
+  padding: 0% 5% 0% 5%;
+  margin-top: 5%;
+}
+
+.artists-ig-gallery-img {
+  width: 25vw;
+  margin: auto;
+}
+
+.artists-ig-gallery-row {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.artists-ig-gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.artists-ig-gallery-col {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .artists-ig-gallery-col {
+    width: 100%;
+    float: left;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .artists-ig-gallery-img {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+/** End Artists of Instagram **/
+
+/**Start Eye Heart Canada **/
+
+#eye-heart-canada {
+  padding: 0% 5% 0% 5%;
+  margin-top: 8%;
+}
+/**End Eye Heart Canada **/
+
+/**Start Mural Project**/
+#mural-project {
+  padding: 0% 5% 0% 5%;
+  margin-top: 6%;
+  margin-bottom: 12%;
+}
+/**Start Mural **/
+
+/** Start Donate **/
+#donate-box {
+  width: 80%;
+  height: auto;
+  padding: 3% 5% 7% 5%;
+  background-color: #E8E5ED;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 10%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/donate-background.png");
+}
+
+.donate-text {
+  color: white;
+}
+
+.donate-button {
+  border: solid 1.8px white;
+  border-radius: 10px;
+  padding: 1% 2.5% 1% 2.5%;
+  color: white;
+  text-decoration: none;
+}
+
+.donate-button:hover {
+  text-decoration: none;
+  background-color: rgba(225,225,225,0.3);
+}
+/** End Donate **/
+
+/** Start Footer **/
+#footer {}
+
+.footer-row {
+  width: 100%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  background-color: #F4F4F4;
+}
+
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-col {
+  float: left;
+}
+
+/** Start Footer Logo **/
+.footer-logo {
+  width: 25%;
+  text-align: center;
+  padding-top: 8%;
+}
+
+#footer-logo-img {
+  width: 10vw;
+  height: auto;
+}
+
+/** End Footer Logo **/
+/** Start Footer Navigate **/
+.footer-navigate {
+  width: 20%;
+}
+
+.footer-navigate ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-navigate li {
+  padding-bottom: 3vh;
+}
+
+.footer-navigate a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.footer-navigate a:hover {
+  color: #3643b5;
+}
+
+/** End Footer Navigate **/
+/** Start Footer Social **/
+.footer-social {
+  width: 23%;
+}
+
+.footer-sub {
+  color: #464646;
+  font-weight: 600;
+  margin-bottom: -2vh;
+}
+
+.footer-social p {
+  padding-bottom: 1.9vh;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #464646;
+}
+
+.footer-link:hover {
+  color: #3643b5;
+}
+
+.footer-row-sub {
+  width: 100%;
+}
+
+.footer-row-sub:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-col-sub {
+  width: 18%;
+  float: left;
+}
+
+.footer-social-icon {
+  width: 25px;
+  height: auto;
+}
+
+/** End Footer Social **/
+.footer-newsletter {
+  width: 30%;
+}
+
+.newsletter-form {
+  position: relative;
+  width: 90%;
+}
+
+#newsletter-input {
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid #6E75B0;
+  border-radius: 40px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 15px 120px 15px 23px;
+}
+
+#newsletter-input:focus {
+  border: 2px solid #2F398C;
+}
+
+#submit-email {
+  background-color: #6E75B0;
+  border-radius: 40px;
+  padding: 12px 21px 12px 21px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+#confirmation-message {
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 900px) {
+  .footer-col {
+    width: 23%;
+    padding-right: 2%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-row {
+    text-align: center;
+  }
+
+  .footer-col-sub {
+    width: 100%;
+    margin-top: 3vh;
+  }
+
+  .newsletter-form {
+    padding-left: 6%;
+  }
+}
+
+/** End Footer **/

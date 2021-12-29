@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eye Hope Canada</title>
+  <meta name="description" content="Eye Hope Canada is a student-led initiative dedicated to the fight against childhood eye cancers.">
+  <meta name="keywords" content="Eye Hope Canada, Eye Hope, Eye, Organization, Student-led">
+  <meta name="author" content="Samantha-Mac, Vanessa-Mac">
+  <!-- Favicon -->
+  <link href="images/favicon.png" rel="icon">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body onload="onLoad()" onresize="onResize()">
+
+  <!-- Start Landing Page -->
+  <section id="landing-page">
+
+    <!-- Start Nav Menu -->
+    <div class="nav-menu" id="nav-menu-id">
+      <a href="index.html#landing-page"><img class="logo" src="images/logo.svg"></a>
+      <div class="nav-menu-right">
+        <a href="#mission-page">About Us</a>
+        <a id="menu-projects" class="dropdown_hover" href="#project-page" onmouseover="openDropdown()" onmouseout="closeDropdown()">Projects</a>
+        <!-- Start drop down items -->
+        <div id="dropdown" onmouseover="openDropdown()" onmouseout="closeDropdown()">
+          <ul class="dropdown-content">
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#resilience">Resilience</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#mural-project">Aaniin Community Mural</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#global-health">Retinoblastoma X Global Health</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#careers-in-medicine">Careers in Medicine</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#artists-ig">Artists of Instagram</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#eye-heart-canada">Eye Heart Canada</a></li>
+          </ul>
+        </div>
+        <!-- End Drop down items -->
+        <a href="#sponsor-page">Sponsors</a>
+        <a href="#team-page">Team</a>
+        <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- End Nav Menu -->
+
+    <!-- Start Alert -->
+    <!-- <div class="alert">
+      <p class="alert-text">Apply to be an ambassador <a href="https://forms.gle/jMSYfDEsQ7oUMGs47" target="_blank">here</a></p>
+    </div> -->
+    <!-- End Alert -->
+
+    <!-- Start Landing Text -->
+    <div class="landing-row">
+      <div class="landing-text">
+        <h1 class="landing-header" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">We are Eye Hope Canada.</h1>
+        <h3 class="landing-subtitle" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">A student-led initiative dedicated to supporting families affected by childhood eye cancer.</h3>
+      </div>
+    </div>
+
+    <!-- End Landing Text -->
+  </section>
+
+  <!-- End Landing Page -->
+
+  <!-- Start Metrics -->
+  <section id="metric-page">
+    <div class="metric-row">
+      <div id="benchmark" class="donations metric-col">
+        <h1 class="metric-heading" data-target="1500">0</h1>
+        <p class="metric-sub">raised in donations</p>
+      </div>
+      <div class="projects metric-col">
+        <h1 class="metric-heading" data-target="5">0</h1>
+        <p class="metric-sub">large-scale projects</p>
+      </div>
+      <div class="involvement metric-col">
+        <h1 class="metric-heading" data-target="75">0</h1>
+        <p class="metric-sub">youth involved</p>
+      </div>
+      <div class="reach metric-col">
+        <h1 class="metric-heading" data-target="1000">0</h1>
+        <p class="metric-sub">people reached</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Metrics -->
+
+  <!-- Start Mission -->
+  <section id="mission-page">
+    <h2 class="pillar-heading">What We Stand For.</h2>
+    <div class="pillar-row">
+      <div class="empower pillar-col" data-aos="fade-right" data-aos-duration="1000">
+        <img id="empower-icon" src="images/empower-icon.svg" />
+        <h3>Empower</h3>
+        <p>As a student-led initiative, we provide unique opportunities for youth to inspire and lead change in our cause.</p>
+      </div>
+      <div class="educate pillar-col" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+        <img id="educate-icon" src="images/educate-icon.svg" />
+        <h3>Educate</h3>
+        <p>We strive to educate our peers about childhood eye cancers and destigmatize families affected by cancer.</p>
+      </div>
+      <div class="community pillar-col" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+        <img id="community-icon" src="images/community-icon.svg" />
+        <h3>Community</h3>
+        <p>Building a community of youth to support youth diagnosed with eye cancer is a central part of our mission.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Mission -->
+
+  <!-- Start Projects -->
+  <section id="project-page">
+    <h2 class="project-main-header">Latest Projects</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel-controls">
+        <img id="control-left" class="control" src="images/left-arrow-icon.png" alt="" onclick="moveLeft()">
+        <img id="control-right" class="control" src="images/right-arrow-icon.png" alt="" onclick="moveRight()">
+      </div>
+      <div id="carousel" class="carousel">
+        <div id="card-1" class="card row">
+          <div class="project-img-wrapper column">
+            <img id="project-img-1" class="project-img" src="images/projects/ambassador-img-1.jpg" alt="Pediatric Oncology Panel">
+          </div>
+          <div class="project-info column-test">
+            <h3 id="project-header-1" class="project-header">Ambassador Program</h3>
+            <h4 id="project-date-1" class="project-date">Rolling Basis</h4>
+            <p id="project-description-1" class="project-description">Join our ambassador to program to help spread our mission and impact across the globe! Start large-scale intiatives in your community</p>
+            <a id="project-button-1" class="project-button" href="projects.html">Apply</a>
+          </div>
+        </div>
+        <div id="card-2" class="card row">
+          <div class="project-img-wrapper column">
+            <img id="project-img-2" class="project-img" src="images/projects/resilience-gallery-5.jpg" alt="">
+          </div>
+          <div class="project-info column-test">
+            <h3 id="project-header-2" class="project-header">Resilience</h3>
+            <h4 id="project-date-2" class="project-date">Spring 2021</h4>
+            <p id="project-description-2" class="project-description">Resilience is a colourful collection of paintings, digital art, short stories, and poems about the strength and experiences of individuals diagnosed with cancer.</p>
+            <a id="project-button-2" class="project-button" href="projects.html#resilience">Learn more</a>
+          </div>
+        </div>
+        <div id="card-3" class="card row">
+          <div class="project-img-wrapper column">
+            <img id="project-img-3" class="project-img" src="images/projects/mural-img.png" alt="">
+          </div>
+          <div class="project-info column-test">
+            <h3 id="project-header-3" class="project-header">Mural Project</h3>
+            <h4 id="project-date-3" class="project-date">Summer 2021</h4>
+            <p id="project-description-3" class="project-description">The EHC team collaborated with local elementary schools in Markham to create a community mural (to be featured at Aaniin CC).</p>
+            <a id="project-button-3" class="project-button" href="projects.html#mural-project">Learn more</a>
+          </div>
+        </div>
+        <div id="card-4" class="card row">
+          <div class="project-img-wrapper column">
+            <img id="project-img-4" class="project-img" src="images/ehc-6.jpeg" alt="">
+          </div>
+          <div class="project-info column-test">
+            <h3 id="project-header-4" class="project-header">Interested in learning more about our past projects?</h3>
+            <h4 id="project-date-4" class="project-date"></h4>
+            <p id="project-description-4" class="project-description">Check out our other projects ranging from fundraisers to educational panels!</p>
+            <a id="project-button-4" class="project-button" href="projects.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects -->
+
+  <!-- Start Sponsors -->
+  <section id="sponsor-page">
+    <div class="sponsor-text">
+      <h2>Partners</h2>
+      <h4>Interested in sponsoring or partnering with us? Email us at eyehopecanada@gmail.com.</h4>
+      <div style="clear: both;"></div>
+    </div>
+    <br />
+    <div class="sponsor-row">
+      <div class="sponsor-col">
+        <img class="POGO-img sponsor-img" src="images/sponsors/POGO.jpg" alt="In Support of POGO" />
+      </div>
+      <div class="sponsor-col">
+        <img class="sponsor-img" src="images/sponsors/crs.jpeg" alt="Canadian Retinoblastoma Society" />
+      </div>
+      <div class="sponsor-col">
+        <img class="sponsor-img" src="images/sponsors/art_land.jpeg" alt="Art Land" />
+      </div>
+      <div class="sponsor-col">
+        <img class="sponsor-img" src="images/sponsors/creative_bag.jpg" alt="Creative Bag" />
+      </div>
+      <div class="sponsor-col">
+        <img class="sponsor-img" src="images/sponsors/next_door.png" alt="Next Door Restaurant" />
+      </div>
+      <div class="sponsor-col">
+        <img class="sponsor-img" src="images/sponsors/smash_bar.jpeg" alt="Smash Bar and Kitchen" />
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+  </section>
+  <!-- End sponsors -->
+
+  <!-- Start Team -->
+  <section id="team-page">
+    <div class="team-text">
+      <h2>Team</h2>
+      <div class="">
+        <a id="linkedin-url"><img id="team-linkedin" src="images/linkedin-logo.png" alt=""></a>
+        <h4 id="team-sub">Meet the members of our EHC family!</h4>
+      </div>
+    </div>
+    <div class="team-row">
+      <div class="samantha-mac team-col">
+        <img class="team-img" src="images/team/samantha-mac.svg" href="" target="_blank" onmouseover="displayName('Samantha Mac', 'Co-President', 'https://www.linkedin.com/in/samantha-mac-06b8811b0/')" />
+      </div>
+      <div class="vanessa-mac team-col">
+        <img class="team-img" src="images/team/vanessa-mac.svg" alt="Samantha Mac, Eye Hope Canada" onmouseover="displayName('Vanessa Mac', 'Co-President', 'https://www.linkedin.com/in/vanessa-mac-6168a5150/')" />
+      </div>
+      <div class="erica-sharma team-col">
+        <img class="team-img" src="images/team/erica-sharma.svg" alt="Vanessa Mac, Eye Hope Canada" onmouseover="displayName('Erica Sharma', 'VP of Events', 'https://www.linkedin.com/in/erica-s-744b12177/')" />
+      </div>
+      <div class="jenny-hu team-col">
+        <img class="team-img" src="images/team/jenny-hu.svg" alt="Jenny Hu" onmouseover="displayName('Jenny Hu', 'VP of Fundraising', 'https://www.linkedin.com/in/jenny-hu-574b11177/')" />
+      </div>
+      <div class="drhuv-patel team-col">
+        <img class="team-img" src="images/team/dhruv-patel.svg" alt="Dhruv Patel" onmouseover="displayName('Drhuv Patel', 'VP of Finance', 'https://www.linkedin.com/in/dhruv-patel-82657514a')" />
+      </div>
+      <div class="yuna-lee team-col">
+        <img class="team-img" src="images/team/yuna-lee.svg" alt="Yuna Lee" onmouseover="displayName('Yuna Lee', 'Events Coordinator', 'https://www.linkedin.com/in/yunalee111/')" />
+      </div>
+      <div class="anjali-pathmanathan team-col">
+        <img class="team-img" src="images/team/anjali-pathmanathan.svg" alt="Anjali Pathmanathan" onmouseover="displayName('Anjali Pathmanathan', 'Events Coordinator', 'empty')" />
+      </div>
+      <div class="nysa-godara team-col">
+        <img class="team-img" src="images/team/nysa-godara.svg" alt="Nysa Godara" onmouseover="displayName('Nysa Godara', 'Fundraising Coordinator', 'empty')" />
+      </div>
+      <div class="divena-raina team-col">
+        <img class="team-img" src="images/team/divena-raina.svg" alt="Divena Raina" onmouseover="displayName('Divena Raina', 'Fundraising Coordinator', 'empty')" />
+      </div>
+      <div class="shonekaa-suthaaharan team-col">
+        <img class="team-img" src="images/team/shonekaa-suthaaharan.svg" alt="Shonekaa Suthaaharan" onmouseover="displayName('Shonekaa Suthaaharan', 'Fundraising Coordinator', 'empty')" />
+      </div>
+      <div class="ana-rothenburg team-col">
+        <img class="team-img" src="images/team/ana-rothenburg.svg" alt="Ana Rothenburg" onmouseover="displayName('Ana Rothenburg', 'Fundraising Coordinator', 'empty')" />
+      </div>
+      <div class="navroopam-haans team-col">
+        <img class="team-img" src="images/team/navroopam-haans.svg" alt="Navroopam Haans" onmouseover="displayName('Navroopam Haans', 'Finance Coordinator', 'https://www.linkedin.com/in/navroopam-haans-bb9380208/')" />
+      </div>
+      <div class="amanda-illeperuma team-col">
+        <img class="team-img" src="images/team/amanda-illeperuma.svg" alt="Amanda Illeperuma" onmouseover="displayName('Amanda Illeperuma', 'Finance Coordinator', 'empty')" />
+      </div>
+      <div class="rosie-do team-col">
+        <img class="team-img" src="images/team/rosie-do.svg" alt="Rosie Do" onmouseover="displayName('Rosie Do', 'Graphic Designer', 'empty')" />
+      </div>
+      <div class="joanne-lee team-col">
+        <img class="team-img" src="images/team/joanne-lee.svg" alt="Joanne Lee" onmouseover="displayName('Joanne Lee', 'Writer', 'https://www.linkedin.com/in/jdaeunlee/')" />
+      </div>
+      <div class="cassidy-laub team-col">
+        <img class="team-img" src="images/team/cassidy-laub.svg" alt="Cassidy Laub" onmouseover="displayName('Cassidy Laub', 'Writer', 'https://www.linkedin.com/in/cassidylaub')" />
+      </div>
+  </section>
+  <!-- End Team -->
+
+  <!-- Start Testimonies -->
+  <section id="testimonies-page">
+    <div class="testimony-row">
+      <div class="testimony-col">
+        <div class="testimony-top testimony-top-1">
+        </div>
+        <div class="testimony-bottom">
+          <p class="testimony-impact">Spread awareness.</p>
+          <p>"I was inspired to help spread awareness about childhood cancer to eductae others and to help as well! I wanted to do more for my community and joining EHC allowed me to pursue my interests in healthcare."</p>
+          <p class="testimony-credit">- Erica Sharma</p>
+        </div>
+      </div>
+
+      <div class="testimony-col">
+        <div class="testimony-top testimony-top-2">
+        </div>
+        <div class="testimony-bottom testimony-off">
+          <p class="testimony-impact">Join a community.</p>
+          <p>"I love working on the EHC team as it provides me with the opportunity to work with like minded and hardworking individuals. Everyone on the team is dedicated and sociable and we have lots of fun!"
+          <p>
+          <p class="testimony-credit">- Abenaya Murugathas</p>
+        </div>
+      </div>
+
+      <div class="testimony-col">
+        <div class="testimony-top testimony-top-3">
+        </div>
+        <div class="testimony-bottom">
+          <p class="testimony-impact">Make a difference.</p>
+          <p>"EHC has helped many youth speak up for what they believe in. Taking part in the many projects and events that EHC hosts can help build an amazing work ethic and leadership skills that I have come to rely on!"</p>
+          <p class="testimony-credit">- Anjali Pathmanathan</p>
+        </div>
+      </div>
+
+      <div class="testimony-last testimony-col">
+        <div class="testimony-top testimony-top-4">
+        </div>
+        <div class="testimony-bottom testimony-off">
+          <p class="testimony-impact">Learn from others.</p>
+          <p>"Youth are able to collaborate in a professional team setting, where we can further develop our time-management and organizational skills. I've learned a lot from other members and for that I am grateful."</p>
+          <p class="testimony-credit">- Cassidy Laub</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonies -->
+
+  <!-- Start Donate Box -->
+  <div id="donate-box">
+    <h2 class="donate-text">Eye Hope Canada is a proud supporter of the Canadian Retinoblastoma Society.</h2>
+    <p class="donate-text">The CRBS is a registered charity commited to providing information and support to families touched by Retinoblastoma.</p>
+    <br />
+    <a class="donate-button" href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+  </div>
+  <!-- End Donate Box -->
+
+  <!-- Start Footer -->
+  <section id="footer">
+    <div class="footer-row">
+      <div class="footer-logo footer-col">
+        <a href="index.html#landing-page"><img id="footer-logo-img" src="images/logo.svg" /></a>
+      </div>
+      <div class="footer-navigate footer-col">
+        <h6>Navigate</h6>
+        <ul class="footer-navigate-list">
+          <a href="index.html#mission-page">
+            <li>About Us</li>
+          </a>
+          <a href="projects.html#project-page">
+            <li>Projects</li>
+          </a>
+          <a href="index.html#sponsor-page">
+            <li>Sponsors</li>
+          </a>
+          <a href="index.html#team-page">
+            <li>Team</li>
+          </a>
+          <a href="https://www.canadahelps.org/en/charities/id/82300/">
+            <li>Donate</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer-social footer-col">
+        <h6>Reach Us</h6>
+        <p class="footer-sub">Email</p>
+        <p><a class="footer-link" href="mailto:info@eyehopecanada.com">eyehopecanada@gmail.com</a></p>
+        <p class="footer-sub">Location</p>
+        <p>Toronto, Ontario</p>
+        <div class="footer-row-sub">
+          <div class="footer-col-sub">
+            <a href="https://www.instagram.com/eyehopecanada/" target="_blank"><img class="footer-social-icon" src="images/instagram-logo.svg" /></a>
+          </div>
+          <div class="footer-col-sub">
+            <a href="https://www.facebook.com/eyehopecanada/" target="_blank"><img class="footer-social-icon" src="images/facebook-logo.svg" /></a>
+          </div>
+          <div class="footer-col-sub">
+            <a href="https://linktr.ee/eyehopecanada" target="_blank"><img class="footer-social-icon" src="images/link-logo.svg" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-newsletter footer-col">
+        <h6>Stay up to date with our latest events!</h6>
+        <div class="newsletter-form">
+          <form id="contactForm" name="submit-to-google-sheet">
+            <input id="newsletter-input" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" required>
+            <button id="submit-email" type="submit">Subscribe</button>
+            <p id="confirmation-message"> </p>
+          </form>
+        </div>
+      </div>
+  </section>
+  <!-- End Footer -->
+
+  <script src="scripts/nav-menu.js"></script>
+  <script src="scripts/metrics.js"></script>
+  <script src="scripts/team.js" charset="utf-8"></script>
+  <script src="scripts/carousel.js" charset="utf-8"></script>
+  <script src="scripts/newsletter.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+
+</html>
