@@ -4,16 +4,16 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  width: 100vw;
+  height: auto;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   box-sizing: border-box;
-  width: 100vw;
   overflow-x: hidden;
-  height: auto;
   overflow-y: visible;
 }
 
-/** Fonts **/
+/** Fonts & Elements **/
 h1 {
   color: #2F398C;
   font-size: 45px;
@@ -49,6 +49,22 @@ h6 {
 
 p {
   font-size: 16px;
+  color: black;
+}
+
+button {
+  padding: 12px 40px;
+  border: solid 1.8px #2F398C;
+  border-radius: 100px;
+  font-size: 16px;
+  color: #2F398C;
+  background-color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  color: white;
+  background-color: rgba(47, 57, 140, .5);
 }
 
 /** Start Landing Page **/
@@ -77,14 +93,14 @@ p {
 }
 
 .nav-menu-right a {
-  color: #3643b5;
-  text-align: center;
   margin-right: 3vw;
-  text-decoration: none;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 14px;
+  color: #3643b5;
   opacity: 60%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .nav-menu a:hover {
@@ -221,7 +237,7 @@ p {
   margin: 7% 0 0 7%;
 }
 
-.landing-subtitle {
+.landing-text h3{
   color: #5F6BAB;
   font-size: 20px;
   z-index: -2;
@@ -254,11 +270,11 @@ p {
 }
 
 .cursor {
-  display: inline-block;
   width: 3px;
-  margin-left: 0.5vw;
-  animation: blink 1s infinite;
   height: 55px;
+  margin-left: 0.5vw;
+  display: inline-block;
+  animation: blink 1s infinite;
 }
 
 .cursortyping {
@@ -291,9 +307,9 @@ p {
     opacity: 100%;
   }
 }
-
 /** End Landing Text **/
 /** End Landing Page **/
+
 /** Start Metrics **/
 #metric-page {
   text-align: center;
@@ -321,7 +337,6 @@ p {
   color: white;
   opacity: 90%;
 }
-
 /**Numbers Testing**/
 @property --num {
   syntax: "<integer>";
@@ -347,7 +362,6 @@ p {
     --num: 100;
   }
 }
-
 /**Numbers Testing**/
 .metric-sub {
   margin-top: -2vh;
@@ -374,8 +388,8 @@ p {
     width: 50%;
   }
 }
-
 /** End Metrics **/
+
 /** Start Mission **/
 #mission-page {
   padding: 3% 5% 0 5%;
@@ -402,8 +416,6 @@ p {
   border-left: solid 1.5px #B7BCDA;
 }
 
-.empower {}
-
 .educate {
   margin-top: 10vh;
 }
@@ -425,56 +437,168 @@ p {
 }
 
 /** End Mission **/
+
 /** Start Projects **/
-.project-main-header {
-  padding-left: 5%;
+#projects-page {
+  margin-bottom: 50px;
+  padding: 5% 5% 0 5%;
 }
 
+.projects-row {
+  width: 100%;
+}
+
+.projects-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.projects-col {
+  width: 47%;
+  height: 270px;
+  margin: 30px 30px 0 0;
+  float: left;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-text-box {
+  padding: 35px 60px 15px 40px;
+}
+
+.projects-row h3 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  opacity: 100%;
+  color: #2F398C;
+}
+
+.projects-row p {
+  color: #2F398C;
+}
+
+.projects-row button {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.projects-row button:hover {
+  color: #2F398C;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+@media screen and (max-width: 1024px) {
+  .projects-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects-col {
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+  }
+
+  .projects-text-box {
+    padding-bottom: 40px;
+  }
+}
+
+/** Start Projects Targets **/
+.projects-col:hover h3 {
+  color: white;
+}
+
+.projects-col:hover p {
+  color: white;
+}
+
+.projects-col:hover button {
+  background-color: rgba(255, 255, 255, .8);
+  border-color: white;
+}
+
+.projects-col-1 {
+  background-image: url("images/projects-background-concert.png");
+}
+
+.projects-col-1:hover {
+  background-image: url("images/projects-background-concert-hover.png");
+}
+
+.projects-col-2 {
+  background-image: url("images/projects-background-resilience.png");
+}
+
+.projects-col-2:hover {
+  background-image: url("images/projects-background-resilience-hover.png");
+}
+
+.projects-col-3 {
+  background-image: url("images/projects-background-mural.png");
+}
+
+.projects-col-3:hover {
+  background-image: url("images/projects-background-mural-hover.png");
+}
+
+.projects-col-4 {
+  background-image: url("images/projects-background-panels.png");
+}
+
+.projects-col-4:hover {
+  background-image: url("images/projects-background-panels-hover.png");
+}
+/** End Projects Targets **/
+/** End Projects **/
+
+/** Start Projects **/
+/* .project-main-header {
+  padding-left: 5%;
+}
 /* Carousel */
-.carousel-wrapper {
+/* .carousel-wrapper {
   overflow-x: hidden;
   width: 100vw;
 }
-
 /*Carousel Controls*/
-.carousel-controls {
+/* .carousel-controls {
   position: relative;
   width: 100vw;
   z-index: 1000;
 }
-
 .control {
   height: 25px;
   width: auto;
   top: 200px;
 }
-
 #control-left {
   position: absolute;
   right: 95vw;
 }
-
 #control-right {
   position: absolute;
   right: 3vw;
 }
-
 @media screen and (max-width: 573px) {
   #control-left {
     position: absolute;
     right: 92vw;
   }
 }
-
 /** Start Carousel **/
-.carousel {
+/* .carousel {
   text-align: left;
   width: 1000%;
   margin-top: 100px;
   z-index: 0;
   padding-left: 7%;
 }
-
 .card {
   display: inline-block;
   background-color: #3643b5;
@@ -485,20 +609,17 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
-
 #card-1 {
   height: 400px;
   width: 800px;
-}
-
+} */
 /*Carousel Animations Larger Screen*/
-.card.moveRightZoom {
+/* .card.moveRightZoom {
   transition: 2.5s;
   transform: translateX(-731px) scaleX(1.33333333333333333333) scaleY(1.33333333333333333333);
   animation-name: increaseOpacity;
   animation-duration: 3s;
 }
-
 .card.moveRightShrink {
   transition: 2.5s;
   transform: translateX(-731px) translateY(-50px) scaleX(0.75) scaleY(0.75);
@@ -506,12 +627,10 @@ p {
   animation-name: decreaseOpacity;
   animation-duration: 3s;
 }
-
 .card.moveRight {
   transition: 2.5s;
   transform: translateX(-631px);
 }
-
 .card.moveLeftZoom {
   transition: 2.5s;
   transform: translateX(731px) scaleX(1.33333333333333333333) scaleY(1.33333333333333333333);
@@ -519,7 +638,6 @@ p {
   animation-name: increaseOpacity;
   animation-duration: 3s;
 }
-
 .card.moveLeftShrink {
   transition: 2.5s;
   transform: translateX(731px) translateY(-50px) scaleX(0.75) scaleY(0.75);
@@ -527,12 +645,10 @@ p {
   animation-name: decreaseOpacity;
   animation-duration: 3s;
 }
-
 .card.moveLeft {
   transition: 2.5s;
   transform: translateX(631px);
 }
-
 @keyframes increaseOpacity {
   from {
     opacity: 40%;
@@ -542,17 +658,14 @@ p {
     opacity: 100%;
   }
 }
-
 @keyframes decreaseOpacity {
   from {
     opacity: 100%;
   }
-
   to {
     opacity: 40%;
   }
 }
-
 @media screen and (min-width: 573px) and (max-width: 925px) {
   .card {
     height: 300px;
@@ -560,18 +673,15 @@ p {
     margin-right: 30px;
     vertical-align: text-top;
   }
-
   #card-1 {
     height: 400px;
     width: 400px;
   }
-
   .card.moveRightZoom {
     transform: translateX(-381px) scaleX(1.33333333333333333333) scaleY(1.33333333333333333333);
     animation-name: increaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveRightShrink {
     transition: 2.5s;
     transform: translateX(-381px) translateY(-50px) scaleX(0.75) scaleY(0.75);
@@ -579,12 +689,10 @@ p {
     animation-name: decreaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveRight {
     transition: 2.5s;
     transform: translateX(-331px);
   }
-
   .card.moveLeftZoom {
     transition: 2.5s;
     transform: translateX(381px) scaleX(1.33333333333333333333) scaleY(1.33333333333333333333);
@@ -592,7 +700,6 @@ p {
     animation-name: increaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveLeftShrink {
     transition: 2.5s;
     transform: translateX(381px) translateY(-50px) scaleX(0.75) scaleY(0.75);
@@ -600,13 +707,11 @@ p {
     animation-name: decreaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveLeft {
     transition: 2.5s;
     transform: translateX(331px);
   }
 }
-
 @media screen and (max-width: 572px) {
   .card {
     height: 300px;
@@ -614,18 +719,15 @@ p {
     margin-right: 30px;
     vertical-align: text-top;
   }
-
   #card-1 {
     height: 400px;
     width: 266.6666666666666667px;
   }
-
   .card.moveRightZoom {
     transform: translateX(-266px) scaleX(1.33333333333333333333) scaleY(1.33333333333333333333);
     animation-name: increaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveRightShrink {
     transition: 2.5s;
     transform: translateX(-266px) translateY(-50px) scaleX(0.75) scaleY(0.75);
@@ -633,12 +735,10 @@ p {
     animation-name: decreaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveRight {
     transition: 2.5s;
     transform: translateX(-233px);
   }
-
   .card.moveLeftZoom {
     transition: 2.5s;
     transform: translateX(266px) scaleX(1.33333333333333333333) scaleY(1.33333333333333333333);
@@ -646,7 +746,6 @@ p {
     animation-name: increaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveLeftShrink {
     transition: 2.5s;
     transform: translateX(266px) translateY(-50px) scaleX(0.75) scaleY(0.75);
@@ -654,49 +753,41 @@ p {
     animation-name: decreaseOpacity;
     animation-duration: 3s;
   }
-
   .card.moveLeft {
     transition: 2.5s;
     transform: translateX(233px);
   }
-}
-
+} */
 /* Card Content */
-.column {
+/* .column {
   float: left;
   width: 50%;
   height: inherit;
 }
-
 .column-test {
   margin-left: 5%;
   float: left;
   width: 35%;
   height: inherit;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .project-img {
   height: 100%;
 }
-
 .project-img-wrapper {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
 .project-header {
   padding-top: 20%;
   weight: 700;
   opacity: 100%;
 }
-
 .project-button {
   border: solid 1.8px white;
   border-radius: 10px;
@@ -705,110 +796,89 @@ p {
   text-decoration: none;
   font-size: 16px;
 }
-
 .project-button:hover {
   background-color: white;
   color: #3643b5;
 }
-
 .project-header {
   margin: 6.5% 0 6.5% 0;
   color: white;
   font-weight: 500;
 }
-
 .project-date {
   margin: 5.9885% 0 5.988% 0;
   color: white;
 }
-
 .project-description {
   margin: 4% 0 15% 0;
   color: white;
 }
-
 @media screen and (max-width: 572px) {
   .project-date {
     margin-bottom: 10%;
   }
 }
-
 /* Card Content Text Size */
-.small-header {
+/* .small-header {
   font-size: 19.5px;
 }
-
 .small-date {
   font-size: 13.5px;
 }
-
 .small-description {
   font-size: 12px;
 }
-
 .small-button {
   font-size: 12px;
 }
-
 @media screen and (max-width: 925px) {
   .column {
     float: left;
     width: 100%;
     height: 50%;
   }
-
   .column-test {
     margin-left: 7%;
     float: left;
     width: 80%;
   }
-
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-
   .project-img {
     height: auto;
     width: 100%;
   }
-
   .project-img-wrapper {
     width: 100%;
     height: 50%;
     overflow-x: hidden;
   }
-
   .project-header {
     padding-top: 2%;
   }
-
   .project-info {
     padding-top: 0%;
   }
-
   .project-description {
     visibility: hidden;
     margin: 0 0 3% 0;
     height: 0px;
   }
-}
-
+} */
 /** End Carousel **/
 /** End Projects **/
+
 /** Start Sponsors **/
 #sponsor-page {
+  margin-bottom: 100px;
   padding: 5% 5% 0 5%;
 }
 
 .sponsor-text {
   text-align: center;
-}
-
-.sponsor-img {
-  height: 70px;
-  width: auto;
 }
 
 .sponsor-row {
@@ -825,18 +895,22 @@ p {
 .sponsor-col {
   float: left;
   text-align: center;
-  margin-right: 4vw;
-  margin-bottom: 5%;
+  margin: auto 25px 50px 25px;
+}
+
+.sponsor-row img{
+  height: 70px;
+  width: auto;
 }
 
 @media screen and (max-width: 767px) {
   .sponsor-col {
     width: 90%;
-    margin-top: 10%;
+    margin-top: 50px;
   }
 }
-
 /** End Sponsors **/
+
 /** Start Team **/
 #team-page {
   padding: 0 5% 0 5%;
@@ -856,28 +930,26 @@ p {
 
 .team-col {
   float: left;
-  padding: 1%;
+  padding: 10px;
   text-align: center;
 }
-
 /** Start Team Text **/
 .team-text {
   text-align: center;
-  margin-bottom: 4vh;
+  margin-bottom: 60px;
 }
 
 .team-sub {
   font-size 0;
 }
-
 /** End Team Text **/
 /** Start Team Images **/
 #team-linkedin {
+  margin-right: 5px;
   visibility: hidden;
   display: inline;
   width: 20px;
   height: auto;
-  margin-right: 5px;
   transform: translateY(3px);
 }
 
@@ -885,7 +957,7 @@ p {
   display: inline;
 }
 
-.team-img {
+.team-row img{
   border-radius: 100%;
   width: 130px;
   height: 130px;
@@ -932,7 +1004,7 @@ p {
 
 .testimony-row {
   width: 100%;
-  margin-top: 8%;
+  margin-top: 100px;
 }
 
 .testimony-row:after {
@@ -987,11 +1059,11 @@ p {
 
 .testimony-credit {
   color: grey;
-  margin-top: 5%;
+  margin-top: 10px;
 }
 
 .testimony-bottom {
-  padding: 5% 10% 0% 10%;
+  padding: 15px 40px 30px 40px;
   height: 300px;
 }
 
@@ -1025,43 +1097,40 @@ p {
 
 /** End Testimony Content **/
 /** End Testimonies **/
+
 /** Start Donate **/
 #donate-box {
   width: 80%;
   height: auto;
-  padding: 3% 5% 7% 5%;
-  background-color: #E8E5ED;
+  margin: 80px auto 80px auto;
   border-radius: 20px;
-  margin: auto;
-  margin-top: 9%;
-  margin-bottom: 10%;
+  padding: 50px 50px 100px 50px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-image: url("images/donate-background.png");
 }
 
-.donate-text {
+#donate-box h2 {
   color: white;
 }
 
-.donate-button {
+#donate-box p {
+  color: white;
+}
+
+#donate-box button {
   border: solid 1.8px white;
-  border-radius: 10px;
-  padding: 1% 2.5% 1% 2.5%;
   color: white;
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.donate-button:hover {
-  text-decoration: none;
-  background-color: rgba(225, 225, 225, 0.3);
+#donate-box button:hover {
+  background-color: rgba(255, 255, 255, .3);
 }
-
 /** End Donate **/
-/** Start Footer **/
-#footer {}
 
+/** Start Footer **/
 .footer-row {
   width: 100%;
   padding-bottom: 2%;

@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-/** Fonts **/
+/** Fonts & Elements **/
 h1 {
   color: #2F398C;
   font-size: 55px;
@@ -45,15 +45,19 @@ p {
   font-size: 16px;
 }
 
-.quote {
-  color: grey;
-  font-size: 22px;
+button {
+  padding: 12px 40px;
+  border: solid 1.8px #2F398C;
+  border-radius: 100px;
+  font-size: 16px;
+  color: #2F398C;
+  background-color: white;
+  text-decoration: none;
 }
 
-.project-logo {
-  height: 7vh;
-  width: auto;
-  margin-bottom: 2%;
+button:hover {
+  color: white;
+  background-color: rgba(47, 57, 140, .5);
 }
 
 /** Start Nav Menu**/
@@ -187,20 +191,10 @@ p {
 /** End Nav Menu **/
 
 /** Start Consistent Metrics**/
-.metric-heading {
-  color: #2F398C;
-  font-weight: 600;
-  margin: 0;
-}
-
-.metric-sub {
-  color: grey;
-}
-
 .metric-row {
   width: 100%;
-  margin-bottom: 5%;
-  margin-top: 3%;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .metric-row:after {
@@ -210,11 +204,11 @@ p {
 }
 
 .metric-col {
-  float: left;
   width: 15%;
   margin-right: 5%;
-  border-right: solid 2px #B7BCDA;
   padding-right: 5%;
+  float: left;
+  border-right: solid 2px #B7BCDA;
 }
 
 .last-metric-col {
@@ -222,17 +216,27 @@ p {
   border-right: white;
 }
 
+.metric-row h2{
+  color: #2F398C;
+  font-weight: 600;
+  margin: 0;
+}
+
+.metric-row p{
+  color: grey;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .metric-row {
-    margin-top: 5%;
+    margin-top: 30px;
   }
 
   .metric-col {
-    float: left;
     width: 40%;
-    padding-right: 3%;
     margin-right: 5%;
     margin-bottom: 3%;
+    padding-right: 3%;
+    float: left;
   }
 
   .last-metric-col {
@@ -242,7 +246,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .metric-row {
-    margin-top: 5%;
+    margin-top: 30px;
   }
 
   .metric-col {
@@ -257,15 +261,9 @@ p {
 /** End Consistent Metrics**/
 
 /** Start Consistent Sponsors**/
-.sponsor-logo {
-  height: 70px;
-  width: auto;
-}
-
 .sponsor-row {
   width: 100%;
-  margin-bottom: 2%;
-  margin-top: 5%;
+  margin: 50px auto 10px auto;
 }
 
 .sponsor-row:after {
@@ -279,26 +277,29 @@ p {
   text-align: center;
   width: auto;
   margin-right: 4%;
-  margin-bottom: 4%;
+  margin-bottom: 25px;
+}
+
+.sponsor-row img{
+  height: 70px;
+  width: auto;
 }
 
 @media screen and (max-width: 767px) {
+  .sponsor-row {
+    margin-top: 25px;
+  }
+
   .sponsor-col {
     width: 100%;
-    margin-bottom: 10%;
   }
 }
 /** End Consistent Sponsors**/
 
 /** Start Consistent Gallery**/
-.gallery-img {
-  width: 20vw;
-}
-
 .gallery-row {
   width: 100%;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin: 40px auto 30px auto;
 }
 
 .gallery-row:after {
@@ -312,6 +313,10 @@ p {
   text-align: center;
   width: 23%;
   margin-right: 1.5%;
+}
+
+.gallery-row img{
+  width: 20vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -399,7 +404,6 @@ p {
 /** Start Resilience **/
 #resilience {
   padding: 0% 5% 0% 5%;
-  margin-top: 8%;
 }
 
 .resilience-health-row {
@@ -474,8 +478,8 @@ p {
 
 /** Start Global Health Panel **/
 #global-health {
+  margin-top: 100px;
   padding: 0% 5% 0% 5%;
-  margin-top: 8%;
 }
 
 .global-health-row {
@@ -514,8 +518,8 @@ p {
 
 /** Start Careers In Medicine Panel **/
 #careers-in-medicine {
+  margin-top: 100px;
   padding: 0% 5% 0% 5%;
-  margin-top: 8%;
 }
 
 .careers-in-medicine-row {
@@ -554,8 +558,8 @@ p {
 
 /** Start Artists of Instagram **/
 #artists-ig {
+  margin-top: 100px;
   padding: 0% 5% 0% 5%;
-  margin-top: 5%;
 }
 
 .artists-ig-gallery-img {
@@ -598,53 +602,49 @@ p {
 
 /** End Artists of Instagram **/
 
-/**Start Eye Heart Canada **/
-
-#eye-heart-canada {
-  padding: 0% 5% 0% 5%;
-  margin-top: 8%;
-}
-/**End Eye Heart Canada **/
-
 /**Start Mural Project**/
 #mural-project {
+  margin-top: 100px;
   padding: 0% 5% 0% 5%;
-  margin-top: 6%;
-  margin-bottom: 12%;
 }
-/**Start Mural **/
+/**End Mural Project **/
+
+/**Start Eye Heart Canada **/
+#eye-heart-canada {
+  margin-top: 100px;
+  padding: 0% 5% 0% 5%;
+}
+/**End Eye Heart Canada **/
 
 /** Start Donate **/
 #donate-box {
   width: 80%;
   height: auto;
-  padding: 3% 5% 7% 5%;
-  background-color: #E8E5ED;
+  margin: 80px auto 80px auto;
   border-radius: 20px;
-  margin: auto;
-  margin-top: 7%;
-  margin-bottom: 10%;
+  padding: 50px 50px 100px 50px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-image: url("images/donate-background.png");
 }
 
-.donate-text {
+#donate-box h2 {
   color: white;
 }
 
-.donate-button {
+#donate-box p {
+  color: white;
+}
+
+#donate-box button {
   border: solid 1.8px white;
-  border-radius: 10px;
-  padding: 1% 2.5% 1% 2.5%;
   color: white;
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.donate-button:hover {
-  text-decoration: none;
-  background-color: rgba(225,225,225,0.3);
+#donate-box button:hover {
+  background-color: rgba(255, 255, 255, .3);
 }
 /** End Donate **/
 
@@ -679,7 +679,6 @@ p {
   width: 10vw;
   height: auto;
 }
-
 /** End Footer Logo **/
 /** Start Footer Navigate **/
 .footer-navigate {
