@@ -1,16 +1,10 @@
-@media screen and (max-width: 767px) {}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-
 body {
   font-family: 'Inter', sans-serif;
-  width: 100vw;
-  height: auto;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   box-sizing: border-box;
+  width: 100vw;
   overflow-x: hidden;
-  overflow-y: visible;
 }
 
 /** Fonts & Elements **/
@@ -70,7 +64,6 @@ button {
 button:hover {
   background-color: #3c4cc9;
 }
-/** Start Landing Page **/
 
 /** Start Nav Menu**/
 .nav-menu {
@@ -213,7 +206,7 @@ button:hover {
 .alert {
   background-color: #3643b5;
   text-align: center;
-  padding: 10px;
+  padding: 0.4%;
 }
 
 .alert-text {
@@ -233,441 +226,31 @@ button:hover {
 }
 /** End Alert **/
 
-#landing-page {
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-image: url("images/landing-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+/** Start Job Openings **/
+
+.job-hook{
+  padding: 20px 45% 40px 10%;
+  margin-bottom: 50px;
+  background-image: url('images/hiring/job-hook.png');
 }
 
-/** Start Landing Text **/
-.landing-text {
-  width: 28%;
-  margin: 7% 0 0 7%;
+.job-row {
+  margin-top: 60px;
+  padding: 0% 10% 0% 10%;
 }
 
-.landing-text h3{
-  color: #5F6BAB;
-  font-size: 20px;
-  z-index: -2;
-}
-
-@media screen and (max-width: 767px) {
-  .landing-text {
-    width: 90%;
-    margin: 0;
-    padding: 5% 7% 0 7%;
-  }
-
-  #landing-page {
-    background-image: url("images/landing-background-responsive-mobile.png");
-    background-position: bottom:
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1130px) {
-  .landing-text {
-    width: 90%;
-    margin: 0;
-    padding: 5% 7% 0 7%;
-  }
-
-  #landing-page {
-    background-image: url("images/landing-background-responsive-tablet.png");
-    background-position: bottom:
-  }
-}
-
-.cursor {
-  width: 3px;
-  height: 55px;
-  margin-left: 0.5vw;
-  display: inline-block;
-  animation: blink 1s infinite;
-}
-
-.cursortyping {
-  animation: blink 100s infinite;
-}
-
-@keyframes blink {
-  0% {
-    background-color: #6E75B0;
-    opacity: 100%;
-  }
-
-  49% {
-    background-color: #6E75B0;
-    opacity: 0%;
-  }
-
-  50% {
-    background-color: #6E75B0;
-    opacity: 100%;
-  }
-
-  99% {
-    background-color: #6E75B0;
-    opacity: 0%;
-  }
-
-  100% {
-    background-color: #6E75B0;
-    opacity: 100%;
-  }
-}
-/** End Landing Text **/
-/** End Landing Page **/
-
-/** Start Metrics **/
-#metric-page {
-  text-align: center;
-  top: 0;
-}
-
-.metric-row {
-  width: 100%;
-  padding-bottom: 8vh;
-  background-color: #3643b5;
-}
-
-.metric-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.metric-col {
-  float: left;
-  width: 25%;
-}
-
-.metric-heading {
-  color: white;
-  opacity: 90%;
-}
-/**Numbers Testing**/
-@property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
-.metric-heading-donations {
-  animation: counter 5s infinite alternate ease-in-out;
-  counter-reset: num var(--num);
-}
-
-.metric-heading-donations::after {
-  content: counter(num);
-}
-
-@keyframes counter {
-  from {
-    --num: 0;
-  }
-
-  to {
-    --num: 100;
-  }
-}
-/**Numbers Testing**/
-.metric-sub {
-  margin-top: -2vh;
-  color: white;
-  opacity: 75%;
-}
-
-#metric-hr {
-  width: 90%;
-  color: white;
-  opacity: 30%;
-  margin-top: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .metric-col {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .metric-col {
-    float: left;
-    width: 50%;
-  }
-}
-/** End Metrics **/
-
-/** Start Mission **/
-#mission-page {
-  padding: 3% 5% 0 5%;
-}
-
-.pillar-row {
-  width: 100%;
-  padding-top: 1.5vh;
-  padding-bottom: 4vh;
-  background-color: white;
-}
-
-.pillar-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.pillar-col {
-  float: left;
-  width: 24%;
-  margin-right: 6vw;
-  padding-left: 30px;
-  border-left: solid 1.5px #B7BCDA;
-}
-
-.educate {
-  margin-top: 10vh;
-}
-
-.community {
-  margin-top: 20vh;
-  margin-right: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .pillar-col {
-    width: 90%;
-    margin-top: 8vh;
-  }
-
-  .empower {
-    margin-top: 0;
-  }
-}
-
-/** End Mission **/
-
-/** Start Projects **/
-#projects {
-  margin-bottom: 40px;
-  padding: 5% 5% 0 5%;
-}
-
-.projects-row {
-  width: 100%;
-}
-
-.projects-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.projects-col {
-  width: 47%;
-  height: 270px;
-  margin: 30px 30px 0 0;
-  float: left;
-  border-radius: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.projects-text-box {
-  padding: 35px 60px 15px 40px;
-}
-
-.projects-row h3 {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 600;
-  opacity: 100%;
-  color: #2F398C;
-}
-
-.projects-row p {
-  color: #2F398C;
-}
-
-.projects-row button {
-  margin-top: 10px;
-  background-color: rgba(255, 255, 255, .7);
-  color: #3c4cc9;
-}
-
-.projects-row button:hover {
-  color: #3c4cc9;
-  background-color: white;
+.job-row p {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-  .projects-col {
-    width: 100%;
+  .job-hook{
+    padding-right: 10%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .projects-col {
-    position: relative;
-    height: auto;
-    min-height: 100% !important;
-  }
+/** End Job Openings **/
 
-  .projects-text-box {
-    padding-bottom: 40px;
-  }
-}
-
-/** Start Projects Targets **/
-.projects-col-1 {
-  background-image: url("images/projects-background-concert.png");
-}
-
-.projects-col-2 {
-  background-image: url("images/projects-background-resilience.png");
-}
-
-.projects-col-3 {
-  background-image: url("images/projects-background-mural.png");
-}
-
-.projects-col-4 {
-  background-image: url("images/projects-background-panels.png");
-}
-/** End Projects Targets **/
-/** End Projects **/
-
-/** Start Sponsors **/
-#sponsors {
-  margin-bottom: 50px;
-  padding: 5% 5% 0 5%;
-}
-
-.sponsor-text {
-  text-align: center;
-}
-
-.sponsor-row {
-  width: 100%;
-  margin: auto;
-}
-
-.sponsor-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sponsor-col {
-  float: left;
-  text-align: center;
-  margin: auto 25px 50px 25px;
-}
-
-.sponsor-row img{
-  height: 70px;
-  width: auto;
-}
-
-@media screen and (max-width: 767px) {
-  .sponsor-col {
-    width: 90%;
-    margin-top: 50px;
-  }
-}
-/** End Sponsors **/
-
-/** Start Team **/
-#team {
-  margin-bottom: 200px;
-  padding: 0 5% 0 5%;
-}
-
-.team-row {
-  width: 100%;
-  padding-bottom: ;
-  margin: auto;
-}
-
-.team-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.team-col {
-  float: left;
-  padding: 10px;
-  text-align: center;
-}
-/** Start Team Text **/
-.team-text {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.team-sub {
-  font-size 0;
-}
-/** End Team Text **/
-/** Start Team Images **/
-#team-linkedin {
-  margin-right: 5px;
-  visibility: hidden;
-  display: inline;
-  width: 20px;
-  height: auto;
-  transform: translateY(3px);
-}
-
-#team-sub {
-  display: inline;
-}
-
-.team-row img{
-  border-radius: 100%;
-  width: 130px;
-  height: 130px;
-  border: solid 3px #a3a7c7;
-}
-
-.team-img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.6s;
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-
-  20% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-
-  40% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-
-  60% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-
-  80% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-
-  100% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-}
-
-/** End Team Images **/
-/** End Team **/
 /** Start Testimonies **/
 #testimony-page {
   width: 100vw;
