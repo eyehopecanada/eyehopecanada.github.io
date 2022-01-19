@@ -468,7 +468,6 @@ button:hover {
 
 .projects-col {
   width: 47%;
-  height: 270px;
   margin: 30px 30px 0 0;
   float: left;
   border-radius: 10px;
@@ -478,7 +477,7 @@ button:hover {
 }
 
 .projects-text-box {
-  padding: 35px 60px 15px 40px;
+  padding: 35px 60px 45px 40px;
 }
 
 .projects-row h3 {
