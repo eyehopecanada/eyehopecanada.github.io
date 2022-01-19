@@ -14,30 +14,16 @@ function myFunction() {
   }
 }
 
-function openDropdown1() {
+function openDropdown() {
   if (window.innerWidth > 767) {
-    document.getElementById("dropdown-1").style.visibility = "visible";
-    document.getElementById("menu-about-us").style.opacity = "100%";
-  }
-}
-
-function closeDropdown1() {
-  if (window.innerWidth > 767) {
-    document.getElementById("dropdown-1").style.visibility = "hidden";
-    document.getElementById("menu-about-us").style.opacity = "60%";
-  }
-}
-
-function openDropdown2() {
-  if (window.innerWidth > 767) {
-    document.getElementById("dropdown-2").style.visibility = "visible";
+    document.getElementById("dropdown").style.visibility = "visible";
     document.getElementById("menu-projects").style.opacity = "100%";
   }
 }
 
-function closeDropdown2() {
+function closeDropdown() {
   if (window.innerWidth > 767) {
-    document.getElementById("dropdown-2").style.visibility = "hidden";
+    document.getElementById("dropdown").style.visibility = "hidden";
     document.getElementById("menu-projects").style.opacity = "60%";
   }
 }
