@@ -7,7 +7,7 @@
 
   <title>Projects | Eye Hope Canada</title>
   <meta name="description" content="Eye Hope Canada is a student-led initiative dedicated to the fight against childhood eye cancers.">
-  <meta name="keywords" content="Eye Hope Canada, Eye Hope, Eye, Organization, Student-led">
+  <meta name="keywords" content="Eye Hope Canada, Eye Hope, Eye, Organization, Student-led, Non-profit, EHC, Charity">
   <meta name="author" content="Samantha-Mac, Vanessa-Mac">
   <!-- Favicon -->
   <link href="images/favicon.png" rel="icon">
@@ -22,33 +22,51 @@
 
 <body>
 
-  <!-- Start Nav Menu -->
-  <div class="nav-menu" id="nav-menu-id">
-    <a href="index.html#landing-page"><img class="logo" src="images/logo.svg"></a>
-    <div class="nav-menu-right">
-      <a href="index.html#mission-page">About Us</a>
-      <a id="menu-projects" class="dropdown_hover" href="index.html#project-page" onmouseover="openDropdown()" onmouseout="closeDropdown()">Projects</a>
-      <!-- Start drop down items -->
-      <div id="dropdown" onmouseover="openDropdown()" onmouseout="closeDropdown()">
-        <ul class="dropdown-content">
-          <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#resilience">Resilience</a></li>
-          <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#mural-project">Aaniin Community Mural</a></li>
-          <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#global-health">Retinoblastoma X Global Health</a></li>
-          <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#careers-in-medicine">Careers in Medicine</a></li>
-          <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#artists-ig">Artists of Instagram</a></li>
-          <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#eye-heart-canada">Eye Heart Canada</a></li>
-        </ul>
+  <!-- Start Landing Page -->
+  <section id="landing-page">
+
+    <!-- Start Nav Menu -->
+    <div class="nav-menu" id="nav-menu-id">
+      <a href="index.html#landing-page"><img class="logo" src="images/logo.svg"></a>
+      <div class="nav-menu-right">
+
+        <a class="menu-about-us" href="index.html#mission-page" onmouseover="openDropdown1()" onmouseout="closeDropdown1()">About Us</a>
+        <!-- Start drop down items -->
+        <div id="dropdown-1" onmouseover="openDropdown1()" onmouseout="closeDropdown1()">
+          <ul class="dropdown-content">
+            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#sponsors">Sponsors</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#team">Team</a></li>
+          </ul>
+        </div>
+        <!-- End Drop down items -->
+
+        <a id="menu-projects" href="#projects.html" class="dropdown_hover" href="#projects" onmouseover="openDropdown2()" onmouseout="closeDropdown2()">Projects</a>
+        <!-- Start drop down items -->
+        <div id="dropdown-2" onmouseover="openDropdown2()" onmouseout="closeDropdown2()">
+          <ul class="dropdown-content">
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#resilience">Resilience</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#mural-project">Aaniin Community Mural</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#global-health">Educational Panels</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#artists-ig">Artists of Instagram</a></li>
+            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#eye-heart-canada">Eye Heart Canada</a></li>
+          </ul>
+        </div>
+        <!-- End Drop down items -->
+
+        <a href="hiring.html">Join Us</a>
+        <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
       </div>
-      <!-- End Drop down items -->
-      <a href="index.html#sponsor-page">Sponsors</a>
-      <a href="index.html#team-page">Team</a>
-      <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <!-- End Nav Menu -->
+    <!-- End Nav Menu -->
+
+    <!-- Start Alert -->
+    <div class="alert">
+      <p class="alert-text">Want to make a difference in your community? <a href="hiring.html">Join our team</a></p>
+    </div>
+    <!-- End Alert -->
 
   <!-- Start Latest Project -->
   <section id="latest-project" data-aos="fade-up" data-aos-duration="1500">
@@ -423,7 +441,7 @@
     <h2>Eye Hope Canada is a proud supporter of the Canadian Retinoblastoma Society.</h2>
     <p>The CRBS is a registered charity commited to providing information and support to families touched by Retinoblastoma.</p>
     <br />
-    <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
+    <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank"><button>Donate</button></a>
   </div>
   <!-- End Donate Box -->
 
@@ -440,7 +458,7 @@
             <li>About Us</li>
           </a>
           <a href="projects.html#project-page">
-            <li>Projects</li>
+            <li>Join Us</li>
           </a>
           <a href="index.html#sponsor-page">
             <li>Sponsors</li>
