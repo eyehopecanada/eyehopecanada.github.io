@@ -118,6 +118,7 @@ button:hover {
   position: absolute;
   top: 33px;
   background-color: #f1f1f1;
+  transform: translateX(-2vw);
   visibility: hidden;
   z-index: 200000000000;
 }
@@ -542,8 +543,9 @@ button:hover {
 
 /** Start Sponsors **/
 #sponsors {
-  margin-bottom: 50px;
-  padding: 5% 5% 0 5%;
+  margin-top: 100px;
+  margin-bottom: 75px;
+  padding: 0 5% 0 5%;
 }
 
 .sponsor-text {
@@ -582,7 +584,7 @@ button:hover {
 
 /** Start Team **/
 #team {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 0 5% 0 5%;
 }
 
@@ -667,106 +669,6 @@ button:hover {
 
 /** End Team Images **/
 /** End Team **/
-/** Start Testimonies **/
-#testimony-page {
-  width: 100vw;
-}
-
-.testimony-row {
-  width: 100%;
-  margin-top: 100px;
-}
-
-.testimony-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.testimony-col {
-  float: left;
-  width: 25%;
-}
-
-.testimony-last {
-  margin-right: 0;
-}
-
-/** Start Testimony Content **/
-.testimony-top {
-  height: 30vh;
-}
-
-.testimony-top-1 {
-  background-image: url("images/testimony-1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.testimony-top-2 {
-  background-image: url("images/testimony-2.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.testimony-top-3 {
-  background-image: url("images/testimony-3.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.testimony-top-4 {
-  background-image: url("images/testimony-4.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.testimony-impact {
-  color: #3643b5;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.testimony-credit {
-  color: grey;
-  margin-top: 10px;
-}
-
-.testimony-bottom {
-  padding: 15px 40px 30px 40px;
-  height: 300px;
-}
-
-.testimony-off {
-  background-color: #f5f5f5;
-}
-
-@media screen and (min-width: 974px) and (max-width: 1150px) {
-  .testimony-bottom {
-    height: 325px;
-  }
-}
-
-@media screen and (min-width: 974px) and (max-width: 1200px) {
-  .testimony-bottom {
-    height: 375px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 974px) {
-  .testimony-col {
-    width: 49%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .testimony-col {
-    width: 100%;
-  }
-}
-
-/** End Testimony Content **/
-/** End Testimonies **/
 
 /** Start Donate **/
 #donate-box {
