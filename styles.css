@@ -541,46 +541,53 @@ button:hover {
 /** End Projects Targets **/
 /** End Projects **/
 
+<<<<<<< Updated upstream
 /** Start Sponsors **/
 #sponsors {
   margin-top: 100px;
   margin-bottom: 75px;
   padding: 0 5% 0 5%;
+=======
+/** Start Partner **/
+#partners {
+  margin-bottom: 50px;
+  padding: 5% 5% 0 5%;
+>>>>>>> Stashed changes
 }
 
-.sponsor-text {
+.partner-text {
   text-align: center;
 }
 
-.sponsor-row {
+.partner-row {
   width: 100%;
   margin: auto;
 }
 
-.sponsor-row:after {
+.partner-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.sponsor-col {
+.partner-col {
   float: left;
   text-align: center;
   margin: auto 25px 50px 25px;
 }
 
-.sponsor-row img{
+.partner-row img{
   height: 70px;
   width: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .sponsor-col {
+  .partner-col {
     width: 90%;
     margin-top: 50px;
   }
 }
-/** End Sponsors **/
+/** End partners **/
 
 /** Start Team **/
 #team {
