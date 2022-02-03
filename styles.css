@@ -571,7 +571,6 @@ button:hover {
 .partner-row img{
   height: 80px;
   width: auto;
-  max-width: 220px;
 }
 
 @media screen and (max-width: 767px) {
