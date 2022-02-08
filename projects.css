@@ -150,8 +150,6 @@ overflow-x: hidden;
   }
 
   .nav-menu {
-    position: absolute;
-    right: 0;
     width: 100vw;
     height: auto;
   }
@@ -368,7 +366,6 @@ overflow-x: hidden;
 @media screen and (max-width: 767px) {
   .gallery-col {
     width: 100%;
-    float: left;
     margin-bottom: 5%;
   }
 
@@ -377,7 +374,7 @@ overflow-x: hidden;
   }
 
   .gallery-row {
-    margin-top: 10%;
+    margin-top: 40px;
   }
 }
 /** End Consistent Gallery**/
