@@ -134,7 +134,7 @@ button:hover {
 
 .dropdown-content {
   list-style-type: none;
-  heigth: inherit
+  height: inherit;
 }
 
 .dropdown-item {
@@ -148,8 +148,6 @@ button:hover {
   }
 
   .nav-menu {
-    position: absolute;
-    right: 0;
     width: 100vw;
     height: auto;
   }
@@ -225,12 +223,6 @@ button:hover {
 
 .alert-text a {
   color: white;
-}
-
-@media screen and (max-width: 767px) {
-  .alert {
-    margin-top: 35px;
-  }
 }
 /** End Alert **/
 

@@ -136,7 +136,7 @@ overflow-x: hidden;
 
 .dropdown-content {
   list-style-type: none;
-  heigth: inherit
+  height: inherit;
 }
 
 .dropdown-item {
@@ -225,12 +225,6 @@ overflow-x: hidden;
 
 .alert-text a {
   color: white;
-}
-
-@media screen and (max-width: 767px) {
-  .alert {
-    margin-top: 35px;
-  }
 }
 /** End Alert **/
 
