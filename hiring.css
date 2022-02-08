@@ -66,6 +66,12 @@ button:hover {
 }
 
 /** Start Nav Menu**/
+#landing-page {
+width: 100vw;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+
 .nav-menu {
   overflow: hidden;
   background-color: rgb(245, 245, 247);

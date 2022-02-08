@@ -64,7 +64,14 @@ button {
 button:hover {
   background-color: #3c4cc9;
 }
+
 /** Start Nav Menu**/
+#landing-page {
+width: 100vw;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+
 .nav-menu {
   overflow: hidden;
   background-color: rgb(245, 245, 247);
@@ -295,19 +302,19 @@ button:hover {
 
 /** End Consistent Metrics**/
 
-/** Start Consistent Sponsors**/
-.sponsor-row {
+/** Start Consistent Partners**/
+.partner-row {
   width: 100%;
   margin: 50px auto 10px auto;
 }
 
-.sponsor-row:after {
+.partner-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.sponsor-col {
+.partner-col {
   float: left;
   text-align: center;
   width: auto;
@@ -315,21 +322,21 @@ button:hover {
   margin-bottom: 25px;
 }
 
-.sponsor-row img{
-  height: 70px;
+.partner-row img{
+  height: 100px;
   width: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .sponsor-row {
+  .partner-row {
     margin-top: 25px;
   }
 
-  .sponsor-col {
+  .partner-col {
     width: 100%;
   }
 }
-/** End Consistent Sponsors**/
+/** End Consistent Partners**/
 
 /** Start Consistent Gallery**/
 .gallery-row {
@@ -439,6 +446,7 @@ button:hover {
 /** Start Resilience **/
 #resilience {
   padding: 0% 5% 0% 5%;
+  margin-top: 50px;
 }
 
 .resilience-health-row {
