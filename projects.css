@@ -68,6 +68,8 @@ button:hover {
 /** Start Nav Menu**/
 #landing-page {
 width: 100vw;
+height: auto;
+margin-top: 0;
 overflow-y: hidden;
 overflow-x: hidden;
 }
@@ -117,6 +119,7 @@ overflow-x: hidden;
   position: absolute;
   top: 33px;
   background-color: #f1f1f1;
+  transform: translateX(-2vw);
   visibility: hidden;
   z-index: 200000000000;
 }
