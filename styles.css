@@ -469,6 +469,17 @@ button:hover {
   background-size: cover;
 }
 
+.projects-col-1 {
+  width: 96%;
+  margin: 30px 30px 0 0;
+  float: left;
+  border-radius: 10px;
+  border: solid 2px #868cc4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .projects-text-box {
   padding: 35px 60px 45px 40px;
 }

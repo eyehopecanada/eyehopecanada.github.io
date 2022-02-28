@@ -438,17 +438,86 @@ overflow-x: hidden;
 }
 /** End Latest Project **/
 
+/** Start OIC **/
+#oic_banner img {
+  width: 100%;
+}
+
+#oic_banner_mobile {
+  visibility: hidden;
+  height: 0px;
+ }
+
+#oic {
+  padding: 0% 5% 0% 5%;
+  margin-top: 50px;
+}
+
+.oic-row {
+  width: 100%;
+}
+
+.oic-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.oic-body-col {
+  float: left;
+}
+
+.oic-body-left {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.oic-body-right {
+  width: 55%;
+}
+
+#oic-gallery-1 {
+  width: 47%;
+}
+
+#oic-gallery-2 {
+  width: 47%;
+}
+
+@media screen and (max-width: 768px){
+  .oic-body-col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #oic_banner_mobile img {
+    width: 100%;
+    margin-top: -70px;
+   }
+
+   #oic_banner_mobile {
+    visibility: visible;
+    height: auto;
+  }
+
+   #oic_banner {
+     visibility: hidden;
+     height: 0px;
+    }
+}
+
+
 /** Start Resilience **/
 #resilience {
   padding: 0% 5% 0% 5%;
   margin-top: 50px;
 }
 
-.resilience-health-row {
+.resilience-row {
   width: 100%;
 }
 
-.resilience-health-row:after {
+.resilience-row:after {
   content: "";
   display: table;
   clear: both;
