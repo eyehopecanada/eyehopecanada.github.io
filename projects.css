@@ -583,6 +583,50 @@ overflow-x: hidden;
 }
 /** End Resilience **/
 
+/** Start Careers in Oncology Panel **/
+#oncology-careers {
+  margin-top: 100px;
+  padding: 0% 5% 0% 5%;
+}
+
+.oncology-careers-row {
+  width: 100%;
+}
+
+.oncology-careers-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.oncology-careers-body-col {
+  float: left;
+}
+
+.oncology-careers-body-left {
+  width: 53%;
+  margin-right: 5%;
+}
+
+.oncology-careers-body-right {
+  width: 40%;
+}
+
+.oncology-careers-body-right img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .oncology-careers-body-col {
+    width: 100%;
+  }
+
+  .oncology-careers-body-left {
+    margin-bottom: 5%;
+  }
+}
+/** End Careers in Oncology Panel **/
+
 /** Start Global Health Panel **/
 #global-health {
   margin-top: 100px;
