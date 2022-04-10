@@ -6,10 +6,10 @@ window.onscroll = function() {
 };
 
 const updateInc = (target, count) => {
-  if (target == 1500) {
+  if (target == 1850) {
     addDollar = true;
     inc = 4;
-    incTimeout = 3.5;
+    incTimeout = 3;
     addPlus = false;
   } else if (target == 5) {
     addDollar = false;
@@ -38,7 +38,7 @@ function scrollFunction() {
       const updateCount = () => {
         const target = +counter.getAttribute('data-target');
 
-        if (target == 1500) {
+        if (target == 1850) {
           count = +counter.innerText.substring(1);
         } else {
           count = +counter.innerText;
