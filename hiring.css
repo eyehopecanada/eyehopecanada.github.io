@@ -232,12 +232,12 @@ overflow-x: hidden;
 }
 
 .job-row {
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 0% 10% 0% 10%;
 }
 
 .job-row p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {
