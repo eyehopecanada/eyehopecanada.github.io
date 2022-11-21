@@ -68,13 +68,6 @@ button:hover {
 }
 
 /** Start Nav Menu**/
-#landing-page {
-width: 100vw;
-height: auto;
-margin-top: 0;
-overflow-x: hidden;
-}
-
 .nav-menu {
   overflow: hidden;
   background-color: rgb(245, 245, 247);
@@ -98,7 +91,7 @@ overflow-x: hidden;
 }
 
 .nav-menu-right a {
-  margin-right: 3vw;
+  margin-right: 4vw;
   margin-top: 15px;
   margin-bottom: 15px;
   color: #3643b5;
@@ -758,6 +751,13 @@ overflow-x: hidden;
   margin-top: 100px;
   padding: 0% 5% 0% 5%;
 }
+
+.img-left{
+  margin-left: 17%;
+}
+.img-right{
+  margin-left: 17%;
+}
 /**End Mural Project **/
 
 /**Start Eye Heart Canada **/
@@ -766,6 +766,7 @@ overflow-x: hidden;
   padding: 0% 5% 0% 5%;
 }
 /**End Eye Heart Canada **/
+
 
 /** Start Donate **/
 #donate-box {
@@ -803,6 +804,7 @@ overflow-x: hidden;
 }
 /** End Donate **/
 
+
 /** Start Footer **/
 #footer {}
 
@@ -828,6 +830,7 @@ overflow-x: hidden;
   width: 25%;
   text-align: center;
   padding-top: 8%;
+  padding-left: 8%;
 }
 
 #footer-logo-img {
@@ -838,6 +841,7 @@ overflow-x: hidden;
 /** Start Footer Navigate **/
 .footer-navigate {
   width: 20%;
+  padding-left: 10%;
 }
 
 .footer-navigate ul {

@@ -1,6 +1,8 @@
 /*
+Don't Need this Script anymore because we don't have a newsletter
+
 Script Credit: https://github.com/jamiewilson/form-to-google-sheets
-*/
+
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzHZ0WfeazbWR5bUZhRn7tcZEVHJKW13SU9OL60NVWs67mHg8SUMYa8kaCzPgisyRiUOg/exec'
 const form = document.forms['submit-to-google-sheet']
@@ -27,3 +29,4 @@ form.addEventListener('submit', e => {
       element2.style.opacity = "100%";
     })
 })
+*/

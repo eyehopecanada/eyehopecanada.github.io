@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 
 <body onload="onLoad()" onresize="onResize()">
@@ -25,51 +26,18 @@
   <section id="landing-page">
 
     <!-- Start Nav Menu -->
-    <div class="nav-menu" id="nav-menu-id">
-      <a href="index.html#landing-page"><img class="logo" src="images/logo.svg"></a>
-      <div class="nav-menu-right">
 
-        <a class="menu-home" href="index.html" onmouseover="openDropdown1()" onmouseout="closeDropdown1()">Home</a>
-        <!-- Start drop down items -->
-        <div id="dropdown-1" onmouseover="openDropdown1()" onmouseout="closeDropdown1()">
-          <ul class="dropdown-content">
-            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#mission">About Us</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#partners">Partners</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#team">Team</a></li>
-          </ul>
-        </div>
-        <!-- End Drop down items -->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
 
-        <a id="menu-projects" href="projects.html" class="dropdown_hover" onmouseover="openDropdown2()" onmouseout="closeDropdown2()">Projects</a>
-        <!-- Start drop down items -->
-        <div id="dropdown-2" onmouseover="openDropdown2()" onmouseout="closeDropdown2()">
-          <ul class="dropdown-content">
-            <!-- <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#oic">Order-In Charity Concert</a></li> -->
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#resilience">Resilience</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#mural-project">Aaniin Community Mural</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#oncology-careers">Educational Panels</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#artists-ig">Artists of Instagram</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#eye-heart-canada">Eye Heart Canada</a></li>
-          </ul>
-        </div>
-        <!-- End Drop down items -->
-
-        <a href="hiring.html">Join Us</a>
-        <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
     <!-- End Nav Menu -->
 
   </section>
 
-  <!-- Start Alert -->
-  <div class="alert">
-    <p class="alert-text">Join our team! Apply <a href="https://forms.gle/GJksqGrJEgivx6Uu5" target='_blank'>here</a> by Wednesday, August 10, 2022 @ 11:59 PM EST.</p>
-  </div>
-  <!-- End Alert -->
 
   <!-- Start Job Openings -->
   <section id="openings">
@@ -167,78 +135,23 @@
   <!-- End Testimonies -->
 
   <!-- Start Donate Box -->
-  <section id="donate-box">
-    <div>
-    <h2>Eye Hope Canada is a proud supporter of the Canadian Retinoblastoma Society.</h2>
-    <p>The CRBS is a registered charity commited to providing information and support to families touched by Retinoblastoma.</p>
-    <br />
-    <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank"><button>Donate</button></a>
-    </div>
-  </section>
+
+  <div id="donate-placeholder"></div>
+  <script>
+    $(function(){
+      $("#donate-placeholder").load("donate.html");
+    });
+  </script>
+
   <!-- End Donate Box -->
 
   <!-- Start Footer -->
-  <section id="footer">
-    <div class="footer-row">
-      <div class="footer-logo footer-col">
-        <a href="index.html#landing-page"><img id="footer-logo-img" src="images/logo.svg" /></a>
-      </div>
-      <div class="footer-navigate footer-col">
-        <h6>Navigate</h6>
-        <ul class="footer-navigate-list">
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="index.html#mission">
-            <li>About Us</li>
-          </a>
-          <a href="index.html#partners">
-            <li>Partners</li>
-          </a>
-          <a href="index.html#team">
-            <li>Team</li>
-          </a>
-          <a href="projects.html">
-            <li>Projects</li>
-          </a>
-          <a href="hiring.html">
-            <li>Join Us</li>
-          </a>
-          <a href="https://www.canadahelps.org/en/charities/id/82300/">
-            <li>Donate</li>
-          </a>
-        </ul>
-      </div>
-      <div class="footer-social footer-col">
-        <h6>Reach Us</h6>
-        <p class="footer-sub">Email</p>
-        <p><a class="footer-link" href="mailto:info@eyehopecanada.com">eyehopecanada@gmail.com</a></p>
-        <p class="footer-sub">Location</p>
-        <p>Toronto, Ontario</p>
-        <div class="footer-row-sub">
-          <div class="footer-col-sub">
-            <a href="https://www.instagram.com/eyehopecanada/" target="_blank"><img class="footer-social-icon" src="images/instagram-logo.svg" /></a>
-          </div>
-          <div class="footer-col-sub">
-            <a href="https://www.facebook.com/eyehopecanada/" target="_blank"><img class="footer-social-icon" src="images/facebook-logo.svg" /></a>
-          </div>
-          <div class="footer-col-sub">
-            <a href="https://linktr.ee/eyehopecanada" target="_blank"><img class="footer-social-icon" src="images/link-logo.svg" /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-newsletter footer-col">
-        <h6>Stay up to date with our latest events!</h6>
-        <div class="newsletter-form">
-          <form id="contactForm" name="submit-to-google-sheet">
-            <input id="newsletter-input" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" required>
-            <button id="submit-email" type="submit">Subscribe</button>
-            <p id="confirmation-message"> </p>
-          </form>
-        </div>
-      </div>
-  </section>
+ <div id="footer-placeholder"></div>
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
   <!-- End Footer -->
 
   <script src="scripts/nav-menu.js"></script>

@@ -18,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script> <!-- Remember to update with each new version-->
 </head>
 
 <body onload="onLoad()" onresize="onResize()">
@@ -25,50 +27,17 @@
   <!-- Start Landing Page -->
   <section id="landing-page">
 
-    <!-- Start Nav Menu -->
-    <div class="nav-menu" id="nav-menu-id">
-      <a href="index.html#landing-page"><img class="logo" src="images/logo.svg"></a>
-      <div class="nav-menu-right">
+    <!-- Start Nav Menu It is dynamic so it can change every where by just changing the nav.html file-->
+    
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
 
-        <a class="menu-home" href="index.html" onmouseover="openDropdown1()" onmouseout="closeDropdown1()">Home</a>
-        <!-- Start drop down items -->
-        <div id="dropdown-1" onmouseover="openDropdown1()" onmouseout="closeDropdown1()">
-          <ul class="dropdown-content">
-            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#mission">About Us</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#partners">Partners</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="index.html#team">Team</a></li>
-          </ul>
-        </div>
-        <!-- End Drop down items -->
-
-        <a id="menu-projects" href="projects.html" class="dropdown_hover" onmouseover="openDropdown2()" onmouseout="closeDropdown2()">Projects</a>
-        <!-- Start drop down items -->
-        <div id="dropdown-2" onmouseover="openDropdown2()" onmouseout="closeDropdown2()">
-          <ul class="dropdown-content">
-            <!-- <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#oic">Order-In Charity Concert</a></li> -->
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#resilience">Resilience</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#mural-project">Aaniin Community Mural</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#oncology-careers">Educational Panels</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#artists-ig">Artists of Instagram</a></li>
-            <li class="dropdown-item-li"><a class="dropdown-item" href="projects.html#eye-heart-canada">Eye Heart Canada</a></li>
-          </ul>
-        </div>
-        <!-- End Drop down items -->
-
-        <a href="hiring.html">Join Us</a>
-        <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank">Donate</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    
     <!-- End Nav Menu -->
-
-    <!-- Start Alert -->
-    <div class="alert">
-      <p class="alert-text">Join our team! Apply <a href="https://forms.gle/GJksqGrJEgivx6Uu5" target='_blank'>here</a> by Wednesday, August 10, 2022 @ 11:59 PM EST.</p>
-    </div>
-    <!-- End Alert -->
 
     <!-- Start Landing Text -->
     <div class="landing-row">
@@ -137,6 +106,7 @@
         <div class="projects-text-box">
           <h3>Order-In Charity Concert</h3>
           <p>In spring 2022, we delivered the concert experience right to our attendees' doors. The Order-In Charity Concert featured talented performers, fun games and raffles, and tons of prizes! All proceeds from the event were donated to the Pediatric Oncology Group of Ontario. Despite being separated during the pandemic, we were able to bring everyone together for a virtual night of music and fun, while supporting a mission that our community is passionate about.</p>
+          <a href="projects.html#oic"><button>Learn More</button></a>
         </div>
       </div>
     </div>
@@ -175,67 +145,8 @@
     </div>
     <br />
     <div class="partner-row">
-      <div class="partner-col">
-        <img src="images/partners/pogo.png" alt="Pediatric Oncology Group of Ontario" />
-      </div>
-        <div class="partner-col">
-          <img src="images/partners/crs.png" alt="Canadian Retinoblastoma Society" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/crsab.png" alt="Canadian Retinoblastoma Advisory Board" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/childhood_cancer_canada.png" alt="Childhood Cancer Canada" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/p2p.png" alt="Passion 2 Purpose" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/markham.png" alt="City of Markham" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/bur_oak.png" alt="Bur Oak Secondary School" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/maker_pizza.png" alt="Maker Pizza" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/pizzaville.png" alt="Pizzaville" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/village_juicery.png" alt="Village Juicery" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/panago.png" alt="Panago Pizza" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/kkp_printing.png" alt="KKP Printing" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/next_door.png" alt="Next Door Restaurant" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/smash_bar.png" alt="Smash Bar and Kitchen" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/cupcake_junkie.png" alt="Cupcake Junkie" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/courage_cookies.png" alt="Courage Cookies" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/creative_bag.png" alt="Creative Bag" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/art_land.png" alt="Art Land" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/kernels_popcorn.png" alt="Kernels Popcorn" />
-        </div>
-        <div class="partner-col">
-          <img src="images/partners/basil_box.png" alt="Basil Box" />
-        </div>
-      <div style="clear: both;"></div>
+
+
     </div>
   </section>
   <!-- End Partners -->
@@ -250,132 +161,35 @@
       </div>
     </div>
     <div class="team-row">
-      <div class="samantha-mac team-col">
-        <img src="images/team/samantha-mac.svg" href="" target="_blank" onmouseover="displayName('Samantha Mac', 'Co-President', 'https://www.linkedin.com/in/samantha-mac-06b8811b0/')" />
-      </div>
-      <div class="vanessa-mac team-col">
-        <img src="images/team/vanessa-mac.svg" alt="Samantha Mac, Eye Hope Canada" onmouseover="displayName('Vanessa Mac', 'Co-President', 'https://www.linkedin.com/in/vanessa-mac-6168a5150/')" />
-      </div>
-      <div class="erica-sharma team-col">
-        <img src="images/team/erica-sharma.svg" alt="Vanessa Mac, Eye Hope Canada" onmouseover="displayName('Erica Sharma', 'VP of Events', 'https://www.linkedin.com/in/erica-s-744b12177/')" />
-      </div>
-      <div class="jenny-hu team-col">
-        <img src="images/team/jenny-hu.svg" alt="Jenny Hu" onmouseover="displayName('Jenny Hu', 'VP of Fundraising', 'https://www.linkedin.com/in/jenny-hu-574b11177/')" />
-      </div>
-      <div class="drhuv-patel team-col">
-        <img src="images/team/dhruv-patel.svg" alt="Dhruv Patel" onmouseover="displayName('Drhuv Patel', 'VP of Finance', 'https://www.linkedin.com/in/dhruv-patel-82657514a')" />
-      </div>
-      <div class="yuna-lee team-col">
-        <img src="images/team/yuna-lee.svg" alt="Yuna Lee" onmouseover="displayName('Yuna Lee', 'Events Coordinator', 'https://www.linkedin.com/in/yunalee111/')" />
-      </div>
-      <div class="anjali-pathmanathan team-col">
-        <img src="images/team/anjali-pathmanathan.svg" alt="Anjali Pathmanathan" onmouseover="displayName('Anjali Pathmanathan', 'Events Coordinator', 'empty')" />
-      </div>
-      <div class="nysa-godara team-col">
-        <img src="images/team/nysa-godara.svg" alt="Nysa Godara" onmouseover="displayName('Nysa Godara', 'Fundraising Coordinator', 'empty')" />
-      </div>
-      <div class="divena-raina team-col">
-        <img src="images/team/divena-raina.svg" alt="Divena Raina" onmouseover="displayName('Divena Raina', 'Fundraising Coordinator', 'empty')" />
-      </div>
-      <div class="shonekaa-suthaaharan team-col">
-        <img src="images/team/shonekaa-suthaaharan.svg" alt="Shonekaa Suthaaharan" onmouseover="displayName('Shonekaa Suthaaharan', 'Fundraising Coordinator', 'empty')" />
-      </div>
-      <div class="ana-rothenburg team-col">
-        <img src="images/team/ana-rothenburg.svg" alt="Ana Rothenburg" onmouseover="displayName('Ana Rothenburg', 'Fundraising Coordinator', 'empty')" />
-      </div>
-      <div class="navroopam-haans team-col">
-        <img src="images/team/navroopam-haans.svg" alt="Navroopam Haans" onmouseover="displayName('Navroopam Haans', 'Finance Coordinator', 'https://www.linkedin.com/in/navroopam-haans-bb9380208/')" />
-      </div>
-      <div class="amanda-illeperuma team-col">
-        <img src="images/team/amanda-illeperuma.svg" alt="Amanda Illeperuma" onmouseover="displayName('Amanda Illeperuma', 'Finance Coordinator', 'empty')" />
-      </div>
-      <div class="rosie-do team-col">
-        <img src="images/team/rosie-do.svg" alt="Rosie Do" onmouseover="displayName('Rosie Do', 'Graphic Designer', 'empty')" />
-      </div>
-      <div class="joanne-lee team-col">
-        <img src="images/team/joanne-lee.svg" alt="Joanne Lee" onmouseover="displayName('Joanne Lee', 'Writer', 'https://www.linkedin.com/in/jdaeunlee/')" />
-      </div>
-      <div class="cassidy-laub team-col">
-        <img src="images/team/cassidy-laub.svg" alt="Cassidy Laub" onmouseover="displayName('Cassidy Laub', 'Writer', 'https://www.linkedin.com/in/cassidylaub')" />
-      </div>
+      
+
+    </div>
   </section>
   <!-- End Team -->
 
   <!-- Start Donate Box -->
-  <section id="donate-box">
-    <div>
-    <h2>Eye Hope Canada is a proud supporter of the Canadian Retinoblastoma Society.</h2>
-    <p>The CRBS is a registered charity commited to providing information and support to families touched by Retinoblastoma.</p>
-    <br />
-    <a href="https://www.canadahelps.org/en/charities/id/82300/" target="_blank"><button>Donate</button></a>
-    </div>
-  </section>
+  
+  <div id="donate-placeholder"></div>
+  
+  <script>
+    $(function(){
+      $("#donate-placeholder").load("donate.html");
+    });
+  </script>
+
   <!-- End Donate Box -->
 
   <!-- Start Footer -->
-  <section id="footer">
-    <div class="footer-row">
-      <div class="footer-logo footer-col">
-        <a href="index.html#landing-page"><img id="footer-logo-img" src="images/logo.svg" /></a>
-      </div>
-      <div class="footer-navigate footer-col">
-        <h6>Navigate</h6>
-        <ul class="footer-navigate-list">
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="index.html#mission">
-            <li>About Us</li>
-          </a>
-          <a href="index.html#partners">
-            <li>Partners</li>
-          </a>
-          <a href="index.html#team">
-            <li>Team</li>
-          </a>
-          <a href="projects.html">
-            <li>Projects</li>
-          </a>
-          <a href="hiring.html">
-            <li>Join Us</li>
-          </a>
-          <a href="https://www.canadahelps.org/en/charities/id/82300/">
-            <li>Donate</li>
-          </a>
-        </ul>
-      </div>
-      <div class="footer-social footer-col">
-        <h6>Reach Us</h6>
-        <p class="footer-sub">Email</p>
-        <p><a class="footer-link" href="mailto:info@eyehopecanada.com">eyehopecanada@gmail.com</a></p>
-        <p class="footer-sub">Location</p>
-        <p>Toronto, Ontario</p>
-        <div class="footer-row-sub">
-          <div class="footer-col-sub">
-            <a href="https://www.instagram.com/eyehopecanada/" target="_blank"><img class="footer-social-icon" src="images/instagram-logo.svg" /></a>
-          </div>
-          <div class="footer-col-sub">
-            <a href="https://www.facebook.com/eyehopecanada/" target="_blank"><img class="footer-social-icon" src="images/facebook-logo.svg" /></a>
-          </div>
-          <div class="footer-col-sub">
-            <a href="https://linktr.ee/eyehopecanada" target="_blank"><img class="footer-social-icon" src="images/link-logo.svg" /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-newsletter footer-col">
-        <h6>Stay up to date with our latest events!</h6>
-        <div class="newsletter-form">
-          <form id="contactForm" name="submit-to-google-sheet">
-            <input id="newsletter-input" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" required>
-            <button id="submit-email" type="submit">Subscribe</button>
-            <p id="confirmation-message"> </p>
-          </form>
-        </div>
-      </div>
-  </section>
+  <div id="footer-placeholder"></div>
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
   <!-- End Footer -->
 
+
+  <script src="scripts/partners.js" type="text/javascript"></script>
   <script src="scripts/nav-menu.js"></script>
   <script src="scripts/metrics.js"></script>
   <script src="scripts/team.js" charset="utf-8"></script>
